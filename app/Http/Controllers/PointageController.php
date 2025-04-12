@@ -30,7 +30,13 @@ class PointageController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $pointage = new Pointage();
+        $pointage->nom = $request->input('nom');
+        $pointage->prenom = $request->input('prenom');
+        $pointage->grade = $request->input('grade');
+        $pointage->save();
+        return redirect()->route('pointage.index');
+        
     }
 
     /**

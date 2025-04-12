@@ -29,9 +29,9 @@
     <a href="" class="btn btn-danger">delete</a></td>
 
     </tr>
-   
+    @endforeach
   </tbody>
 </table>
 </div>
-    @endforeach
+   
     @endsection
